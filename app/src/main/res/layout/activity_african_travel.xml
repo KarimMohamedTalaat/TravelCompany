@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.karim.travelcompany.AfricanTravel">
+
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/africanPhoto"
+            android:layout_width="match_parent"
+            android:layout_height="190dp"
+            android:src="@drawable/naturalview"
+            android:scaleType="centerCrop"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="More Photos"
+            android:layout_marginTop="165dp"
+            android:layout_marginLeft="230dp"
+            android:background="@drawable/rounded_shape"
+            android:textColor="@android:color/white"
+            android:padding="10dp"/>
+
+        <TextView
+            android:id="@+id/location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Location: Africa"
+            android:layout_below="@id/africanPhoto"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date: 24 October 2018"
+            android:layout_below="@id/location"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Price: 8,000 L.E"
+            android:layout_below="@id/date"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/brief"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A Trip to Europe is provided by Karim Travel Company, the trip is fully paid with the reservation of Helton hotel with 3 meals per day, there are many attractive programs to let you make a very nice tour arround the place, also there is a nice gift for any one gives a recommendation for others to come and see this nice place .. waiting your registeration."
+            android:layout_below="@id/price"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="20dp"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"/>
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorPrimary"
+            android:layout_below="@id/brief"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"></View>
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_below="@+id/brief"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_centerHorizontal="true">
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="30dp"
+                android:layout_weight="1"
+                android:text="Register Now"
+                android:textColor="@android:color/white"
+                android:background="@drawable/rounded_shape"/>
+
+            <Button
+                android:id="@+id/anotherTravels"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Another Travels"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="50dp"
+                android:textColor="@android:color/white"
+                android:background="@drawable/rounded_shape"/>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>
